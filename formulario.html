@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formulario.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>DOM, EVENTOS Y FUNCIONES </title>
+</head>
+<body>
+</body>
+    <!--
+        Formulario con los campos: nombres, apellidos y edad
+        Boton de enciar formulario(evento submit)
+        Tenemos que mostrar datos por pantalla 
+        Tener un boton que al dar click nos muestra los datos actuales del formulario
+        Validacion del formulario
+    -->
+    <h1>DOM, EVENTOS Y FUNCIONES</h1>
+    <div class="box">
+        <form action="#" method="post" id="form" onsubmit="return false;">
+            <label for="nombre">Nombre:</label> <br>
+            <input type="text" name="nombre" id="nombre">
+            <span id="error_nombre">El nombre no es valido</span>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos"> <br>
+
+            <label for="text">Edad</label> <br>
+            <input type="number" name="edad" id="edad">
+
+            <input type="submit" value="Enviar" id="submit"> <br>
+        </form>
+    </div>
+    <div class="box dashed">
+        <h3>
+            Informacion del Usuario
+            <hr>
+            <p id="p_nombre">Nombre: <span></span></p>
+            <p id="p_apellidos">Apellidos: <span></span></p>
+            <p id="p_edad">Edad: <span></span></p>
+        </h3>
+    </div>
+</body>
+</html>
